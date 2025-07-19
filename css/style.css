@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-item img{
+    height: 93.2vh;
+    margin-top: 50px;
+}
+.carousel-caption{
+    background-color: #1d516f7c;
+    border-radius: 10px;
+    height: 170px;
+}
+.image{
+    height: 500px;
+    background-image: url(../images/cyberpunk-2077-3840x2160-13543.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cards .card{
+    position: relative;
+    background: -webkit-linear-gradient(top , #1276ce , #00a9eb , #95dff6 , #fffdff);
+    border: 0;
+    box-shadow: 5px 5px 15px #e2ffff !important;
+}
+.cards .card::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #1276ce;
+    opacity: 0;
+    transition: 1s;
+}
+.cards .card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+    border-radius: 5px;
+}
+.cards .card::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #e2ffff;
+    opacity: 0;
+    transition: 1s;
+}
+.cards .card:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+    border-radius: 5px;
+}
+.cards .card:hover{
+  box-shadow: 7px 7px 15px #0099ff !important;
+}
+.image2{
+    width: 100%;
+    height: 500px;
+    margin-top: 1720px;
+    background-image: url(../images/geralt-of-rivia-the-3840x2160-14024.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cards2 .overlay{
+    background: -webkit-linear-gradient(top , rgba(50, 50, 50, 0.5) , rgba(176, 176, 176, 0.2));
+}
+.cards2 .overlay:hover{
+    background: -webkit-linear-gradient(top , #0099ffcb , #1cd9ff57);
+}
+.cards2 .card{
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    border: 1px solid #deedff;
+    box-shadow: -5px 5px 15px #e2ffff !important;
+}
+.cards2 .card:hover{
+    transform: scale(0.9);
+    border: 1px solid #0075ff !important;
+    box-shadow: -7px 7px 15px #0075ff !important;
+}
+.cards2 .card .card-img-top{
+    transition: transform 0.4s ease-in-out;
+}
+.cards2 .card:hover .card-img-top{
+    transform: scale(1.1);
+}
+.cards2 .cardcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+.cards2 .cardcenter:hover{
+    transform: translate(-50% , 0) scale(0.9);
+}
+.cards2 .card-title1{
+    transition: 0.4s;
+}
+.cards2 .card-text1{
+    transition: 0.4s;
+}
+.cards2 .card:hover .card-title1{
+    transform: translateY(20px);
+}
+.cards2 .card:hover .card-text1{
+    transform: translateY(20px);
+}
+
+.card3img{
+    overflow: hidden;
+    transform: skewX(5deg);
+}
+.card3{
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(114, 114, 114);
+    background: -webkit-linear-gradient(left ,#343234 , #dddfe2) !important;
+}
+.card3:hover{
+    box-shadow: 5px 5px 10px #1b9ed4;
+}
+.card3 img{
+    transition: 0.5s;
+}
+.prograss{
+    transition: 0.5s;
+}
+.card3:hover .prograss{
+    width: 100px !important;
+}
+.card3:hover img{
+    transform: scale(1.1) !important;
+}
+
+.social-card{
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 3px #717377d0;
+    transition: transform 0.3s;
+    background: -webkit-linear-gradient(top left ,#343234 , #dddfe2, #343234) !important;
+}
+
+.social-card:hover{
+    transform: scale(1.05);
+}
+
+.social-card img{
+    width: 50px;
+    height: 50px;
+    margin: 15px 0;
+    box-shadow: 2px 2px 10px black;
+    background-color: black;
+    border-radius: 5px;
+}
+.social-card p a{
+    text-decoration: none;
+}
+@media (max-width: 768px){
+    .cards .card{
+        float: none !important;
+        position: relative !important;
+        width: 90%;
+        margin: 10px auto !important;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none !important;
+    }
+    .cards .middle-card{
+        left: 0 !important;
+        transform: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+  .card3 {
+    width: 450px;
+    height: auto !important;
+    padding: 1.5rem !important;
+    text-align: start !important;
+  }
+
+  .card3img {
+    float: none !important;
+    width: 450px !important;
+    height: auto !important;
+    margin-right:-49px !important;
+    display: block !important;
+    transform: skewX(0deg);
+  }
+  .card3img2{
+    margin-left:-49px !important;
+  }
+
+  .card3img img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .card3 h3,
+  .card3 p,
+  .card3 .prograss {
+    margin-left: 0 !important;
+    float: none !important;
+    text-align: start !important;
+  }
+  .icon2{
+    margin-left: 0 !important;
+  }
+
+  .card3 i,
+  .card3 span {
+    display: inline-block;
+    text-align: start !important;
+  }
+
+  .card3 button {
+    display: none;
+  }
+}
+
+ @media (max-width: 768px) {
+    .footer .row.justify-content-center {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+    .footer .row.justify-content-center > .container {
+      width: 100% !important;
+      max-width: 100%;
+      margin-bottom: 10px !important;
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+
+    .footer .row.justify-content-center img {
+      margin: 0 auto !important;
+    }
+
+    .footer .row.justify-content-center h6 {
+      margin: 10px 0 0 0 !important;
+    }
+  }
+  .navbtn:hover{
+    box-shadow: 0px 0px 10px #00e4fe;
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.2s linear;
+  }
+  .curbtn{
+    background: -webkit-linear-gradient(top left ,#0075ff , #0099ff , #00cbf8);
+    color: #123245 !important;
+    border: 2px #1d516f !important;
+    font-weight: bold !important;
+  }
+  .curbtn:hover{
+    box-shadow: 0px 0px 10px 5px #0099ff;
+    transform: scale(1.05);
+    transition: 0.2s linear;
+  }
+  body{
+    background-color: black !important;
+  }
+
+  .gradient-text{
+    background: linear-gradient(to bottom , #000000 , #0015ff) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  .gradient-text1{
+    background: linear-gradient(to bottom ,#0075ff , #0099ff , #00cbf8) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  .footer a:hover{
+    color: #2086fa !important;
+  }
